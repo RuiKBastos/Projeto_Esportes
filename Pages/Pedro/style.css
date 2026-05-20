@@ -1,0 +1,137 @@
+body {
+  background-color: rgb(73, 73, 175);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  text-align: center;
+  color: white;
+}
+.card {
+  background-color: #0d0d0d;
+  padding: 50px;
+  border-radius: 100px;
+  margin: 250px;
+  width: 2000px;
+  height: 800px;
+}
+/* CONTAINER TOTAL */
+.container-volei {
+  width: 2000px;
+  min-height: 800px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+/* ÁREA DAS IMAGENS */
+.quadra {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 120px;
+
+  position: relative;
+}
+
+/* LINHA SUPERIOR */
+.time-cima {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+/* LINHA INFERIOR */
+.time-baixo {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+/* REDE CENTRAL */
+.rede {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 20;
+}
+
+.rede img {
+  width: 850px;
+  object-fit: contain;
+}
+
+/* CARDS */
+.card {
+  width: 250px;
+  height: 360px;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #111;
+  transition: 0.3s ease;
+}
+
+/* IMAGEM */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* EFEITO */
+.card:hover {
+  transform: scale(1.04);
+}
+video {
+  width: 700px;
+  height: 650px;
+  margin-top: 10px;
+}
+.video {
+  display: flex;
+  justify-content: baseline;
+}
+.container-imagens {
+  width: 2000px; /* Defina a largura desejada */
+  height: 1200px; /* Defina a altura desejada (igual à largura para quadrado) */
+  overflow: hidden; /* Esconde o que passar do limite */
+  padding: 0%;
+  margin: 0%;
+}
+
+.container-imagens img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a mágica do recorte proporcional */
+  object-position: center; /* Centraliza a imagem no recorte */
+  padding: 0%;
+}
+.section1 {
+  background-color: rgb(236, 206, 108);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  overflow-x: hidden;
+  text-align: center;
+  color: black;
+}
+.section2 {
+  background-color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  overflow-x: hidden;
+  text-align: center;
+  color: black;
+}
