@@ -1,0 +1,182 @@
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: Arial, sans-serif;
+min-height: 100vh;
+overflow-x: hidden;
+background: linear-gradient(
+135deg,
+#000000,
+#1a1a1a,
+#fa4f00,
+#000000
+);
+background-size: 400% 400%;
+animation: fundoAnimado 10s ease infinite;
+color: white;
+text-align: center;
+padding: 30px;
+position: relative;
+}
+@keyframes fundoAnimado {
+0% {
+background-position: 0% 50%;
+}
+25% {
+background-position: 50% 100%;
+}
+50% {
+background-position: 100% 50%;
+}
+75% {
+background-position: 50% 0%;
+}
+100% {
+background-position: 0% 50%;
+}
+}
+.subtitulo {
+font-size: 1.2rem;
+color: #f0f0f0;
+}
+.container {
+display: flex;
+flex-direction: column;
+gap: 40px;
+align-items: center;
+}
+.texto {
+margin-top: 10px;
+}
+.texto p {
+font-size: 1.1rem;
+line-height: 1.8;
+color: #f3f3f3;
+margin-bottom: 20px;
+}
+img {
+width: 100%;
+max-width: 700px;
+border-radius: 15px;
+transition:
+transform 0.5s ease,
+box-shadow 0.5s ease,
+filter 0.5s ease;
+cursor: pointer;
+box-shadow:
+0 0 20px rgba(255,255,255,0.15);
+}
+img:hover {
+transform: scale(1.03);
+filter: brightness(1.0);
+box-shadow:
+0 0 25px white,
+0 0 30px rgba(255,255,255,0.5);
+}
+video {
+width: 100%;
+max-width: 900px;
+border-radius: 20px;
+margin-top: 20px;
+box-shadow:
+0 0 20px rgba(255,255,255,0.2);
+}
+@keyframes aparecer {
+from {
+opacity: 0;
+transform: translateY(30px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+@media (max-width: 768px) {
+.hero h1 {
+font-size: 2.5rem;
+}
+.texto p {
+font-size: 1rem;
+}
+.card,
+.video-card {
+padding: 20px;
+}
+}
+body::before {
+content: "";
+position: fixed;
+inset: 0;
+background:
+radial-gradient(circle at top left, rgba(250,79,0,0.25), transparent 35%),
+radial-gradient(circle at bottom right, rgba(255,255,255,0.08), transparent 30%);
+pointer-events: none;
+animation: brilho 10s ease-in-out infinite;
+}
+@keyframes brilho {
+0% {
+opacity: 0.4;
+transform: scale(1);
+}
+50% {
+opacity: 0.8;
+transform: scale(1.05);
+}
+100% {
+opacity: 0.4;
+transform: scale(1);
+}
+}
+.modos-airsoft {
+display: flex;
+gap: 30px;
+justify-content: center;
+align-items: stretch;
+flex-wrap: wrap;
+margin-top: 40px;
+}
+.modo-card {
+width: 100%;
+max-width: 500px;
+background: rgba(255,255,255,0.06);
+border: 1px solid rgba(255,255,255,0.15);
+backdrop-filter: blur(10px);
+border-radius: 25px;
+overflow: hidden;
+transition: 1s ease;
+box-shadow:
+0 0 20px rgba(0,0,0,0.3);
+}
+.modo-card:hover {
+transform: translateY(-10px);
+box-shadow:
+0 0 30px rgba(250,79,0,0.4);
+}
+.modo-card img {
+width: 100%;
+height: 280px;
+object-fit: cover;
+border-radius: 0;
+}
+.modo-texto {
+padding: 25px;
+}
+.modo-texto h2 {
+font-size: 2rem;
+margin-bottom: 15px;
+color: #ffffff;
+}
+.modo-texto p {
+font-size: 1rem;
+line-height: 1.7;
+color: #f0f0f0;
+}
+@media (max-width: 900px) {
+.modos-airsoft {
+flex-direction: column;
+align-items: center;
+                         }
+}
